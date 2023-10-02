@@ -3,6 +3,7 @@
 }
 #banner{
     position: absolute;
+    height: 2%;
 }
 #pie{
     top: 0px;
@@ -12,4 +13,37 @@
 }
 body{
     background: radial-gradient(circle,#C7193FF0 300px,#B2004E 400px,#7C003E 700px);
+    
+}
+#menu {
+    font-family:Arial;
+    font-weight:bold;
+    font-size:13px;
+}
+.separador {
+    color:gray;
+}
+
+#menu li {
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+    
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+
+a:hover {
+    
+    background-color:lightgray;
+}
+
+#menu li img {
+    width: 100px;
+    height: 100px;   
+}
+#texto{
+    padding-left:25px;
 }
