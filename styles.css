@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 #Titulo{
     font-size: large;
 }
@@ -40,10 +46,25 @@ a:hover {
     background-color:lightgray;
 }
 
-#menu li img {
-    width: 100px;
-    height: 100px;   
+
+
+.opciones{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 75vh;
+    padding-left: 20%;
+    padding-right: 30%;
+
+    .iconos {
+        width: 250px;
+        height: 250px;
+        padding:15%; 
+    
+    }
+
 }
+
 #texto{
-    padding-left:25px;
+    padding-left:30px;
 }
