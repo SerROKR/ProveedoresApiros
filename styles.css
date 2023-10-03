@@ -9,31 +9,21 @@
 }
 #banner{
     position: absolute;
-    height: 2%;
+    height: 1%;
 }
-#pie{
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    position: relative"
-}
+
 body{
     background: radial-gradient(circle,#C7193FF0 300px,#B2004E 400px,#7C003E 700px);
-    
+    min-height: 100vh;
 }
-#menu {
-    font-family:Arial;
-    font-weight:bold;
-    font-size:13px;
-}
+
 .separador {
     color:gray;
 }
 
 #menu li {
     display:inline;
-    padding-left:3px;
-    padding-right:3px;
+
     
 }
 a {
@@ -49,22 +39,29 @@ a:hover {
 
 
 .opciones{
-    display: flex;
+    display:flex;
     align-items: center;
-    width: 100vw;
-    height: 75vh;
-    padding-left: 20%;
-    padding-right: 30%;
+    width: 100%;
+    height: 100%;
+    padding: 40vh 5% 5% 5%;
+
 
     .iconos {
-        width: 250px;
-        height: 250px;
-        padding:15%; 
-    
+        width: 100px;
+        height: 100px;
+        margin: auto 50% auto 50%;
+        padding: auto;
     }
 
 }
 
 #texto{
     padding-left:30px;
+}
+
+#pie{
+        width:100%;
+        height: 0%;
+        top: 0px;
+        position: relative;
 }
