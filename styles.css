@@ -1,44 +1,69 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-#banner{
+#banner {
     position: absolute;
     height: 1%;
 }
 
-#Titulo{ 
-    width: 100%  
-    
+#Titulo {
+    display: flex;
+    width: 100%;
+    max-width: auto;
+    padding-top: 30px;
+
 }
 
-#nombre{
+/*#nombre{
     padding: 10% 50% 10% 0%;    
+    float:left;
 }
 
 #logo{
     padding: 10% 10% 10% 50%;
-    
-}
+    float: right;
+}*/
+    #nombre {
+        font-size: 50px;
+        margin-top: 60px;
+        margin-right: 100px;
+        padding-right: 300px;
+        padding-left: 150px;
+        color: white;
+        font-family: 'Onest', sans-serif;
+    }
 
-body{
-    background: radial-gradient(circle,#C7193FF0 300px,#B2004E 400px,#7C003E 700px);
+    #logo {
+        float: right;
+        margin-right: 40px;
+        margin-left: 7px;
+        width: 100%;
+
+        
+    }
+
+body {
+    background: radial-gradient(circle, #C7193FF0 300px, #B2004E 400px, #7C003E 700px);
     min-height: 100vh;
+    max-width: 100%;
+    border : 10px solid red;
 }
 
 .separador {
-    color:gray;
+    color: gray;
 }
 
 #menu li {
-    display:inline;
+    display: inline;
 
-    
+
 }
-.opciones{
-    display:flex;
+
+.opciones {
+    display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -49,40 +74,43 @@ body{
         width: 200px;
         height: 200px;
         margin: auto 50px auto 50px;
-        
+
     }
 
     a {
-        color:white;
-        text-decoration:none;
+        color: white;
+        text-decoration: none;
         text-align: center;
     }
-    a:hover {
-    
-        background-color:#A35319;
 
-        
+    img:hover {
+
+        background-color: #2b1e14;
+        transition: all 1.5s;
+        border-radius: 10px;
+
     }
-    p{
+
+    p {
         padding-top: 10px;
     }
-    
+
 }
 
-#Iconos_Decorativos{
-    display:flex;
+#Iconos_Decorativos {
+    display: flex;
     align-items: center;
     padding: 4% 5% 5% 5%;
-    img{
+
+    img {
         height: 100px;
         margin: auto 10px auto 60px;
     }
 }
 
-#pie{
-        width:100%;
-        height: 0%;
-        top: 0px;
-        position: relative;
+#pie {
+    width: 100%;
+    height: 0%;
+    top: 0px;
+    position: relative;
 }
-
