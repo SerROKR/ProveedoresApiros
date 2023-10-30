@@ -9,6 +9,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Onest:wght@200;400&display=swap');
     </style>
     <link rel="stylesheet" href="Registro.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/crud.js"></script>''
 </head>
 
 <body>
@@ -24,20 +28,20 @@
     <main>
         <section class="Form-register">
             <h1>Registro de proveedor</h1>
-            <input type="text" name="NIT" id="NIT" placeholder=" Ingrese el NIT">
-            <input type="text" name="Razón_Social" id="Razón_Social" placeholder=" Ingrese el nombre del tercero">
-            <input type="text" name="RUT" id="RUt" placeholder=" Ingrese la fecha de expedición del RUT">
+            <input type="text" name="NIT" id="NIT" placeholder="Ingrese el NIT">
+            <input type="text" name="Razón_Social" id="Razón_Social" placeholder="Ingrese el nombre del tercero">
+            <input type="text" name="RUT" id="RUt" placeholder="Ingrese la fecha de expedición del RUT">
             <input type="text" name="Camara_Comercio" id="Camara_comercio"
-                placeholder=" Ingrese la fecha de expedición de la camara de comercio">
+                placeholder="Ingrese la fecha de expedición de la camara de comercio">
             <input type="text" name="Cert_Bancaria" id="Cert_Bancaria"
-                placeholder=" Ingrese la fecha de expedición del certificado">
-            <input type="text" name="Sagrilaft" id="Sagrilaft" placeholder=" Ingrese fecha de consulta">
+                placeholder="Ingrese la fecha de expedición del certificado">
+            <input type="text" name="Sagrilaft" id="Sagrilaft" placeholder="Ingrese fecha de consulta">
             <input type="text" name="ultima_actualizacion" id="ultima_actualizacion"
-                placeholder=" Ultima fecha de actualización del proveedor">
+                placeholder="Ultima fecha de actualización del proveedor">
             <input type="text" name="Proxima_actualizacion" id="Proxima_actualizacion"
                 placeholder="Proxima fecha de actualización:">
             <input id="boton" type="submit" value="Registrar">
-            <input id="boton" type="submit" value="Regresar">
+            <input id="boton" type="button" onclick="window.location.href='./Index.html';" value="Regresar" >
         </section>
     </main>
 

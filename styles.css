@@ -48,8 +48,6 @@ body {
 
 #menu li {
     display: inline;
-
-
 }
 
 .opciones {
@@ -58,7 +56,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 3% 5% 5% 5%;
-
+    margin-left: 340px;
 
     .iconos {
         width: 200px;
@@ -75,7 +73,7 @@ body {
 
     img:hover {
 
-        background-color: #2b1e14;
+        background-color: #713100;
         transition: all 1.5s;
         border-radius: 10px;
 
