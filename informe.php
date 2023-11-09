@@ -56,8 +56,8 @@ $lista_proveedores=$Sentencia->fetchall(PDO::FETCH_ASSOC);
                 </div>
                 <div class="card-body">
                     <div id="Informe">
-                        <div class="table-responsive-sm" id="tabla_id">
-                            <table class="table table-bordered">
+                        <div class="table-responsive-sm">
+                            <table class="table table-bordered" id="tabla_id">
                                 <thead>
                                     <tr>
                                         <th scope="col">NIT</th>
@@ -109,18 +109,9 @@ $lista_proveedores=$Sentencia->fetchall(PDO::FETCH_ASSOC);
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     < script >
-        $(document).ready(function() {
-            $("#tabla_id").DataTable({
-                "pageLength": 5;
-                lengthMenu: [
-                    [5, 10, 25, 50],
-                    [5, 10, 25, 50]
-                ],
-                "language": {
-                    "url": "https://cdn.datatables.net/plug-ins/1.13.7/i18n/es-ES.json"
-                }
-            });
-        });
+    $(document).ready( function () {
+    $("#tabla_id").DataTable();
+} );
     </script>
 </body>
 

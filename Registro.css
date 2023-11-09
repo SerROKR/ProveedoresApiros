@@ -2,12 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #22212100;
 }
 
 #banner {
     position: absolute;
     margin-bottom: 1em;
+
+}
+
+.nav{
+    background-color: #7c003e00;
+    padding-right: 1%;
+    padding-top: 40px;
     
+    navbar-expand{
+        padding-top: 0px;
+    }
 }
 
 
@@ -18,88 +29,86 @@
     padding-top: 30px;
 
 }
-    #nombre {
-        font-size: 50px;
-        margin-top: 60px;
-        margin-right: 100px;
-        padding-right: 300px;
-        padding-left: 150px;
-        color: white;
-        font-family: 'Onest', sans-serif;
-    }
 
-    #logo {
-        float: right;
-        margin-right: 40px;
-        margin-left: 7px;
-        width: 100%;
+#nombre {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-right: 100px;
+    padding-right: 300px;
+    padding-left: 150px;
+    color: white;
+    font-family: 'Onest', sans-serif;
+}
 
-        
-    }
+#logo {
+    float: right;
+    margin-right: 40px;
+    margin-left: 7px;
+    width: 100%;
+
+
+}
 
 body {
     background: radial-gradient(circle, #C7193FF0 300px, #B2004E 400px, #7C003E 700px);
-    border : 10px solid red;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    width: 100%;
+    /*border : 10px solid red;*/
+    min-height: 90vh;
+    width: 90%;
     position: relative;
     padding-bottom: 15em;
 }
 
+.card {
+    width: 50%;
+    margin-inline: 25%;
+    opacity: 0, 0;
+}
 
-.Form-register{
+.mb-3 {
     text-align: center;
     width: 30%;
     padding: 30px;
     margin: auto;
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*background:  #22212130;*/
+    background-color: #22212100;
     border: 1px;
 
-    h1{
-        padding-bottom: 50px;
-        font-size: 30px;
-        font-weight: bold;
-        color:white;
-    }
-
-    input{
+    .form-control {
         width: 100%;
         height: 25px;
         margin-bottom: 15px;
-        background:  #bf878730;
         border-radius: 50px;
-        border: 1px; 
+        border: 1px;
         font-family: 'calibri';
         font-size: 15px;
         color: white;
         font-weight: bold;
         padding-left: 5px;
-        }
-
-    #boton{
-        background-color: white;
-        font-weight: bold;
-        border: 0;
-        color: black;
-        width: 20%;
     }
 
-    #boton2{
-        background-color: white;
+    #Boton {
+        background-color: #f6b036;
+        align-items: center;
         font-weight: bold;
         border: 0;
-        color: black;
-        width: 20%;
+        color: white;
+        width: 30%;
+    }
+
+    #Boton2 {
+        background-color: #b2004e;
+        font-weight: bold;
+        border: 0;
+        color: white;
+        width: 30%;
     }
 }
 
-footer{
+
+footer {
     text-align: center;
-    position:absolute;
+    position: absolute;
     padding-top: 1em;
     bottom: 0;
     /*width: 100%;*/
