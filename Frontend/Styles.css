@@ -1,0 +1,85 @@
+#Azul{
+    color: blue;
+}
+
+#Rojo{
+    color: red;
+
+    span{
+        text-decoration-line: underline;
+    }
+}
+
+#parte{
+    text-decoration-line: underline;
+    color: green;
+}
+
+#rayado{
+    text-decoration: overline underline;
+}
+
+#Rojo{
+    color: red;
+        text-decoration-line: underline;
+}
+
+#marca{
+    color:brown;
+}
+
+#marca:hover{
+    color:aquamarine;
+}
+
+#AS{
+    color: blueviolet;
+}
+
+#AS:hover{
+    color:greenyellow
+}
+
+.nav{
+    background-color: #d6afdc;
+    padding: 10px 150px 10px 20px;
+    color: white;
+    
+    
+    navbar-expand{
+        padding-top: 0px;
+    }
+
+    a {
+        margin: 5px;
+    }
+
+    a:hover{
+        background-color: blue;
+    }
+}
+
+#punto8 table{
+    background-color: yellow;
+    border: 1px dotted black;
+    ;
+}
+
+#punto8 table th::first-letter{
+    font-weight:bold;
+    
+}
+
+#punto8 table th{
+    color: red;
+    border: none;
+    font-style: italic;
+    text-align: center
+}
+
+#punto8 table td{
+    padding: 0px;
+    border:1px dotted black;
+}
+
+    

@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #22212100;
+    font-family: 'Onest', sans-serif;
+}
+
+#banner {
+    position: absolute;
+    margin-bottom: 1em;
+
+}
+
+#Titulo {
+    display: flex;
+    width: 100%;
+    max-width: auto;
+    padding-top: 30px;
+
+}
+
+#nombre {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-right: 100px;
+    padding-right: 300px;
+    padding-left: 150px;
+    color: white;
+    font-family: 'Onest', sans-serif;
+}
+
+#logo {
+    float: right;
+    margin-right: 40px;
+    margin-left: 7px;
+    width: 100%;
+
+
+}
+
+body {
+    background: radial-gradient(circle, #C7193FF0 300px, #B2004E 400px, #7C003E 700px);
+    /*border : 10px solid red;*/
+    min-height: 98vh;
+    width: 90%;
+    position: relative;
+    padding-bottom: 15em;
+
+    .card {
+        margin: 80px 25% auto 25%;
+        /*margin-left: 25%;
+        margin-right: 25%;
+        max-width: 50%;
+        margin-top: 80px;*/
+        align-items: center;
+        background-color: #7c003e42;
+        border-color: #7c003e00;
+        border-radius: 20px;
+    }
+
+    .card-header {
+        color: white;
+        font-size: 50px;
+        text-align: center;
+    }
+
+
+    .mb-3 {
+        text-align: center;
+        width: 100%;
+        padding: 50px 300px 50px 300px;
+        margin: auto;
+        border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #22212100;
+        border: 1px;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+
+        i{
+            margin-bottom: 30px;
+            color: #ea7724;
+            border-color: black;
+        }
+
+        .form-control {
+            width: 100%;
+            height: 35px;
+            margin-bottom: 15px;
+            border-radius: 50px;
+            border: 1px;
+            font-family: 'calibri';
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        #Boton {
+            background-color: #f6b036;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 50px;
+            color: white;
+            width: 80%;
+        }
+
+        #Boton:hover{
+            background-color: #e43137;
+        }
+    }
+
+
+    footer {
+        text-align: center;
+        position: absolute;
+        padding-top: 1em;
+        bottom: 0;
+        /*width: 100%;*/
+    }
+}
+.error{
+    background-color: #ea7724;
+    Color:white;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    margin: 20px auto;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+    
+
+}

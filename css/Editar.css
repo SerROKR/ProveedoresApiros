@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #22212100;
+    font-family: 'Onest', sans-serif;
+}
+
+#banner {
+    position: absolute;
+    margin-bottom: 1em;
+
+}
+
+.nav {
+    background-color: #7c003e00;
+    padding-right: 1%;
+    padding-top: 40px;
+
+    navbar-expand {
+        padding-top: 0px;
+    }
+}
+
+
+#Titulo {
+    display: flex;
+    width: 100%;
+    max-width: auto;
+    padding-top: 0px;
+
+}
+
+#nombre {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-right: 100px;
+    padding-right: 300px;
+    padding-left: 150px;
+    color: white;
+    font-family: 'Onest', sans-serif;
+}
+
+#logo {
+    float: right;
+    margin-right: 40px;
+    margin-left: 7px;
+    width: 100%;
+
+
+}
+
+body {
+    background: radial-gradient(circle, #C7193FF0 300px, #B2004E 400px, #7C003E 700px);
+    /*border : 10px solid red;*/
+    min-height: 90vh;
+    width: 90%;
+    position: relative;
+    padding-bottom: 15em;
+}
+
+.Contenedor {
+    display: flex;
+    width: 100%;
+    color: white;
+    padding-left: 150px;
+    /*background-color: aquamarine;*/
+
+    h2 {
+        text-align: Center;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    #consulta {
+        padding: auto;
+        margin: 10px;
+        padding-top: 50px;
+        text-align: left;
+    }
+
+    .card {
+        width: 100%;
+        /*margin-inline: 25%;*/
+        background-color: #22212100;
+        padding: 10px 100px 10px 100px;
+        margin: 0 100px 0 100px   ;
+    }
+
+    .mb-3 {
+        width: 100%;
+        padding: 0px 200px 0 200px;
+        border-radius: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #22212100;
+        border: 1px;
+        
+
+        .form-control {
+            width: 100%;
+            text-align: center;
+            height: 25px;
+            margin-bottom: 15px;
+            border-radius: 50px;
+            border: 1px;
+            font-family: 'calibri';
+            font-size: 15px;
+            color: rgb(7, 7, 7);
+            /*font-weight: bold;*/
+            
+        }
+
+        #Boton {
+            align-items: center;
+            background-color: #f6b036;
+            font-weight: bold;
+            border: 0;
+            color: white;
+            width: 30%;
+            margin-left: 75px;
+            
+        }
+
+        #Boton:hover {
+            background-color: #e43137;
+        }
+
+        #Boton2 {
+            align-items: center;
+            background-color: #b2004e;
+            font-weight: bold;
+            border: 0;
+            color: white;
+            width: 30%;
+        }
+
+        #Boton2:hover {
+            background-color: #e43137;
+        }
+    }
+
+
+
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    padding-top: 1em;
+    bottom: 0;
+    /*width: 100%;*/
+}
