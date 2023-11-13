@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Administración Proveedores Apiros</title>
-    <link rel="stylesheet" type="text/css" href="Informe.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/proyecto/ProveedoresApiros/css/Informe.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 <body>
     <header>
         <div id="banner">
-            <img src="Img/Header.png" alt="frame">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Footer.png" alt="frame">
         </div>
         <nav class="navbar navbar-expand">
             <ul class="nav navbar-nav">
@@ -33,7 +33,7 @@
         </nav>
         <div id="Titulo">
             <h1 id="nombre">Proveedores <br> Apiros</h1>
-            <section id="logo"><img src="Img/Logo.png" alt="Logo"></section>
+            <section id="logo"><img src="http://localhost/proyecto/ProveedoresApiros/Img/Logo.png" alt="Logo"></section>
         </div>
     </header>
     <main>
@@ -104,10 +104,10 @@
     </main>
     <footer>
         <div id="Iconos_Decorativos">
-            <img src="Img/Decorativos.png" alt="decorativos">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Decorativos.png" alt="decorativos">
         </div>
         <div id="pie">
-            <img src="Img/footer.png" alt="footer">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Footer.png" alt="footer">
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Login.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost/proyecto/ProveedoresApiros/css/Login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,11 +19,11 @@
 <body>
     <header>
         <div id="banner">
-            <img src="Img/Header.png" alt="frame">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Footer.png" alt="frame">
         </div>
         <div id="Titulo">
             <h1 id="nombre">Proveedores <br> Apiros</h1>
-            <section id="logo"><img src="Img/Logo.png" alt="Logo"></section>
+            <section id="logo"><img src="http://localhost/proyecto/ProveedoresApiros/Img/Logo.png" alt="Logo"></section>
         </div>
     </header>
     <main>
@@ -62,10 +62,10 @@
     </main>
     <footer>
         <div id="Iconos_Decorativos">
-            <img src="Img/Decorativos.png" alt="decorativos">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Decorativos.png" alt="decorativos">
         </div>
         <div id="pie">
-            <img src="Img/footer.png" alt="footer">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Footer.png" alt="footer">
         </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->

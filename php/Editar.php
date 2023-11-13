@@ -1,13 +1,3 @@
-<?php 
-include("DataBase.php");
-
-$id=$_GET["id"];
-
-$Sql= ("SELECT * FROM proveedores WHERE Registro = $id");
-$resultado = $Conexion ->  query ($Sql);
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +8,7 @@ $resultado = $Conexion ->  query ($Sql);
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Onest:wght@200;400&display=swap');
     </style>
-    <link rel="stylesheet" href="Editar.css">
+    <link rel="stylesheet" href="http://localhost/proyecto/ProveedoresApiros/css/editar.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/crud.js"></script>
@@ -27,7 +17,7 @@ $resultado = $Conexion ->  query ($Sql);
 <body>
     <header>
         <div id="banner">
-            <img src="Img/Header.png" alt="frame">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Footer.png" alt="frame">
         </div>
         <nav class="navbar navbar-expand">
             <ul class="nav navbar-nav">
@@ -42,11 +32,10 @@ $resultado = $Conexion ->  query ($Sql);
         </nav>
         <div id="Titulo">
             <h1 id="nombre">Proveedores<br> Apiros</h1>
-            <section id="logo"><img src="Img/Logo.png" alt="Logo"></section>
+            <section id="logo"><img src="http://localhost/proyecto/ProveedoresApiros/Img/Logo.png" alt="Logo"></section>
         </div>
     </header>
     <?php
-    include "DataBase.php";
     ?>
     <div class="card">
         <div class="card-body">
@@ -67,32 +56,22 @@ $resultado = $Conexion ->  query ($Sql);
 
                         </tr>
                     </thead>
-                    <tbody><?php
-                    while ($datos=$resultado->fetch_object()) {
+                    <tbody>
 
-                    ?>
                         <tr class="">
-                            <td input type="text" class="form-control" name="Registro" value="<?=$datos->Registro?>">
-                            <td input type="text" name="NIT" value="<?=$datos->NIT?>">
-                            <td input type="text" name="Razon_Social" value="<?=$datos->Razon_Social?>">
+                            <td input type="text" class="form-control" name="Registro">
+                            <td input type="text" name="NIT">
+                            <td input type="text" name="Razon_Social">
                             </td>
-                            <td input type="text" name="Correo_Notificacion"
-                            value="<?=$datos->Correo_Notificacion?>">
-                            <td input type="date" name="Fecha_Rut" value="<?php echo $registro ['Fecha_Rut'];?>"></td>
-                            <td input type="date" name="Fecha_Comercio"
-                                value="<?php echo $registro ['Fecha_Comercio'];?>"></td>
-                            <td input type="date" name="Fecha_Bancaria"
-                                value="<?php echo $registro ['Fecha_Bancaria'];?>"></td>
-                            <td input type="date" name="Fecha_Sagrilaft"
-                                value="<?php echo $registro ['Fecha_Sagrilaft'];?>"></td>
-                            <td input type="date" name="Ultima_Actualizacion"
-                                value="<?php echo $registro ['Ultima_Actualizacion'];?>"></td>
-                            <td input type="date" name="Proxima_Actualizacion"
-                                value="<?php echo $registro ['Proxima_Actualizacion'];?>"></td>
+                            <td input type="text" name="Correo_Notificacion">
+                            <td input type="date" name="Fecha_Rut"></td>
+                            <td input type="date" name="Fecha_Comercio" ></td>
+                            <td input type="date" name="Fecha_Bancaria"></td>
+                            <td input type="date" name="Fecha_Sagrilaft"></td>
+                            <td input type="date" name="Ultima_Actualizacion"></td>
+                            <td input type="date" name="Proxima_Actualizacion"></td>
 
 
-                            <?php } 
-                            ?>
                             <td class="accion">
                                 <a name="" id="boton" class="btn btn-success" href="#" role="button">Notificar</a>
                                 <a name="" id="botonModificar" class="btn btn-success" href="Editar.php"
@@ -107,10 +86,10 @@ $resultado = $Conexion ->  query ($Sql);
     </div>
     <footer>
         <div id="Iconos_Decorativos">
-            <img src="Img\Decorativos.png" alt="decorativos">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Decorativos.png" alt="decorativos">
         </div>
         <div id="pie">
-            <img src="Img\Footer.png" alt="footer">
+            <img src="http://localhost/proyecto/ProveedoresApiros/Img/Footer.png" alt="footer">
         </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
