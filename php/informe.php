@@ -83,8 +83,8 @@
                                     <tr class="">
                                         <td scope="row"><?php echo $registro['Registro'];?></td>
                                         <td scope="row"><?php echo $registro['NIT'];?></td>
-                                        <td><?php echo $registro['Razon_Social'];?></td>
-                                        <td><?php echo $registro['Proxima_Actualizacion'];?></td>
+                                        <td scope="row"><?php echo $registro['Razon_Social'];?></td>
+                                        <td scope="row"><?php echo $registro['Proxima_Actualizacion'];?></td>
                                         <td class="accion">
                                             <a name="" id="boton" class="btn btn-success" href="#"
                                                 role="button">Notificar</a>
@@ -120,7 +120,7 @@
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    < script >
+    </script>
         $(document).ready(function() {
             $("#tabla_id").DataTable();
         });
