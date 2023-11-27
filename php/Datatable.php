@@ -1,92 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
-
-
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- DataTable -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.3/css/buttons.bootstrap5.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/Informe.css">
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
 </head>
 
 <body>
   <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
-    <div class="container">
-      <br>
-      <div class="table-responsive-xl">
-        <table class="table table-primary">
-          <thead>
-            <tr>
-              <th scope="col">Registro</th>
-              <th scope="col">NIT</th>
-              <th scope="col">Razón Social</th>
-              <th scope="col">Correo</th>
-              <th scope="col">RUT</th>
-              <th scope="col">Camara de comercio</th>
-              <th scope="col">Certificación Bancaria</th>
-              <th scope="col">Sarlaft</th>
-              <th scope="col">Ultima Actualización</th>
-              <th scope="col">Proxima Actualización</th>
-              <th scope="col">Acción</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php
-            include "DataBase.php";
-
-            $Sql = "SELECT * FROM proveedores";
-            $resultado = $Conexion->query($Sql);
-
-            foreach ($resultado as $registro) { ?>
-              <tr>
-                <td scope="row"><?php echo $registro['Registro']; ?></td>
-                <td scope="row"><?php echo $registro['NIT']; ?></td>
-                <td scope="row"><?php echo $registro['Razon_Social']; ?></td>
-                <td scope="row"><?php echo $registro['Correo_Notificacion']; ?></td>
-                <td scope="row"><?php echo $registro['Fecha_Rut']; ?></td>
-                <td scope="row"><?php echo $registro['Fecha_Comercio']; ?></td>
-                <td scope="row"><?php echo $registro['Fecha_Bancaria']; ?></td>
-                <td scope="row"><?php echo $registro['Fecha_Sagrilaft']; ?></td>
-                <td scope="row"><?php echo $registro['Ultima_Actualizacion']; ?></td>
-                <td scope="row"><?php echo $registro['Proxima_Actualizacion']; ?></td>
-
-                <td class="accion">
-                  <a name="" id="boton" class="btn btn-success" href="#" role="button">Notificar</a>
-                  <a name="" id="botonModificar" class="btn btn-success" href="Editar.php?id=<?= $registro['Registro'] ?>" button>Modificar</a>
-                  <a name="" id="botonEliminar" class="btn btn-primary" href="#" role="button">Eliminar</a>
-                </td>
-              </tr>
-            <?php } ?>
-          </tbody>
-        </table>
-      </div>
+    <div id="banner">
+      <img src="../Img/Footer.png" alt="frame">
     </div>
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    <nav class="navbar navbar-expand">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="Menu.php" aria-current="page">Inicio <span class="visually-hidden">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cerrar Sesión</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="Titulo">
+      <h1 id="nombre">Proveedores <br> Apiros</h1>
+      <section id="logo"><img src="../Img/Logo.png" alt="Logo"></section>
+    </div>
+  </header>
+  <div class="container my-5">
+    <table id="example" class="table" style="width: 80%">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js-"></script>
-  <script>
-    $(document).ready(function() {
-      $('#myTable').DataTable();
-    });
-  </script>
+      <thead>
+        <tr>
+          <th scope="col">Registro</th>
+          <th scope="col">NIT</th>
+          <th scope="col">Razón Social</th>
+          <th scope="col">Correo</th>
+          <th scope="col">RUT</th>
+          <th scope="col">Camara de comercio</th>
+          <th scope="col">Certificación Bancaria</th>
+          <th scope="col">Sarlaft</th>
+          <th scope="col">Ultima Actualización</th>
+          <th scope="col">Proxima Actualización</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        include "DataBase.php";
+
+        $Sql = "SELECT * FROM proveedores";
+        $resultado = $Conexion->query($Sql);
+
+        foreach ($resultado as $registro) { ?>
+          <tr>
+            <td scope="row"><?php echo $registro['Registro']; ?></td>
+            <td scope="row"><?php echo $registro['NIT']; ?></td>
+            <td scope="row"><?php echo $registro['Razon_Social']; ?></td>
+            <td scope="row"><?php echo $registro['Correo_Notificacion']; ?></td>
+            <td scope="row"><?php echo $registro['Fecha_Rut']; ?></td>
+            <td scope="row"><?php echo $registro['Fecha_Comercio']; ?></td>
+            <td scope="row"><?php echo $registro['Fecha_Bancaria']; ?></td>
+            <td scope="row"><?php echo $registro['Fecha_Sagrilaft']; ?></td>
+            <td scope="row"><?php echo $registro['Ultima_Actualizacion']; ?></td>
+            <td scope="row"><?php echo $registro['Proxima_Actualizacion']; ?></td>
+          </tr>
+        <?php } ?>
+      </tbody>
+
+    </table>
+  </div>
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- DataTable -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.bootstrap5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.html5.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.print.min.js"></script>
+  <!-- Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+  <footer>
+    <div id="Iconos_Decorativos">
+      <img src="../Img/Decorativos.png" alt="decorativos">
+    </div>
+    <div id="pie">
+      <img src="../Img/Footer.png" alt="footer">
+    </div>
+  </footer>
 </body>
 
 </html>
+
+
+
+
+
+<!-- Required meta tags -->
+<!-- Bootstrap CSS v5.2.1 -->
