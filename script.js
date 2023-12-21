@@ -32,12 +32,20 @@ let dataTableOptions={
     pageLength: 3,//propiedad que permite definir la cantidad de registros que se quieren mostrar al cargar la pagina.
 
     //Definición del lenguaje en el cual se quiere mostrar la tabla
-    language: {
-        url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/es-CO.json',
-    },
+
 }
 
 $(document).ready(function () {
     $('#example').DataTable(dataTableOptions);
 
 });
+
+const listUsers = async()=>{
+    try{
+        const response  = await fetch ("")
+    }
+}
+
+window.addEventListener("load", async ()=>{
+    await listUsers();
+})

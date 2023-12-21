@@ -11,12 +11,13 @@
     margin-bottom: 1em;
 
 }
-.nav{
+
+.nav {
     background-color: #7c003e00;
     padding-right: 1%;
     padding-top: 40px;
-    
-    navbar-expand{
+
+    navbar-expand {
         padding-top: 0px;
     }
 }
@@ -36,7 +37,7 @@
     padding-right: 300px;
     padding-left: 150px;
     color: white;
-    
+
 }
 
 #logo {
@@ -57,11 +58,33 @@ body {
     padding-bottom: 15em;
 }
 
-#container my-5{
-        .table{
+main {
+    display: flex;
+
+
+    #container {
+        margin-left: 10px;
+
+        .table {
             color: white;
         }
+
+        .accion {
+            display: flex;
+            padding-right: 150px;
+
+            i {
+                width: 1px;
+                height: 1px;
+            }
+        }
+
+
     }
+
+}
+
+
 
 
 footer {

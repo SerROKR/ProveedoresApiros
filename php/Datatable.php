@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- DataTable -->
+  <link rel="stylesheet" type="text/css" href="../css/Informe.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.3/css/buttons.bootstrap5.min.css" />
   <link rel="stylesheet" type="text/css" href="../css/Informe.css">
@@ -36,48 +37,73 @@
       <section id="logo"><img src="../Img/Logo.png" alt="Logo"></section>
     </div>
   </header>
-  <div class="container my-5">
-    <table id="example" class="table" style="width: 80%">
+  <main>
+    <div id="consulta">
+      <form>
+        <fieldset>
+          <h2>Rango de fechas a consultar</h2>
+          <legend><b>Fecha Inicial</b></legend>
+          <input type="date" class="form-control" id="Fecha_Inicial">
+          <br>
+          <legend><b>Fecha Final</b></legend>
+          <input type="date" class="form-control" id="Fecha_Final">
+          <br>
+          <button type="button" id="Buscar" class="btn btn-success">Buscar</button>
+          <button type="button" id="Buscar" class="btn btn-light">Limpiar</button>
+        </fieldset>
+      </form>
+    </div>
 
-      <thead>
-        <tr>
-          <th scope="col">Registro</th>
-          <th scope="col">NIT</th>
-          <th scope="col">Razón Social</th>
-          <th scope="col">Correo</th>
-          <th scope="col">RUT</th>
-          <th scope="col">Camara de comercio</th>
-          <th scope="col">Certificación Bancaria</th>
-          <th scope="col">Sarlaft</th>
-          <th scope="col">Ultima Actualización</th>
-          <th scope="col">Proxima Actualización</th>
-        </tr>
-      </thead>
-      <tbody>
-        <?php
-        include "DataBase.php";
-
-        $Sql = "SELECT * FROM proveedores";
-        $resultado = $Conexion->query($Sql);
-
-        foreach ($resultado as $registro) { ?>
+    <div class="container">
+      <table id="example" class="table" style="width: 100%">
+        <thead>
           <tr>
-            <td scope="row"><?php echo $registro['Registro']; ?></td>
-            <td scope="row"><?php echo $registro['NIT']; ?></td>
-            <td scope="row"><?php echo $registro['Razon_Social']; ?></td>
-            <td scope="row"><?php echo $registro['Correo_Notificacion']; ?></td>
-            <td scope="row"><?php echo $registro['Fecha_Rut']; ?></td>
-            <td scope="row"><?php echo $registro['Fecha_Comercio']; ?></td>
-            <td scope="row"><?php echo $registro['Fecha_Bancaria']; ?></td>
-            <td scope="row"><?php echo $registro['Fecha_Sagrilaft']; ?></td>
-            <td scope="row"><?php echo $registro['Ultima_Actualizacion']; ?></td>
-            <td scope="row"><?php echo $registro['Proxima_Actualizacion']; ?></td>
+            <th scope="col">Registro</th>
+            <th scope="col">NIT</th>
+            <th scope="col">Razón Social</th>
+            <th scope="col">Correo</th>
+            <th scope="col">RUT</th>
+            <th scope="col">Camara de comercio</th>
+            <th scope="col">Certificación Bancaria</th>
+            <th scope="col">Sarlaft</th>
+            <th scope="col">Ultima Actualización</th>
+            <th scope="col">Proxima Actualización</th>
+            <th scope="col">Acción a Realizar</th>
+            <th scope="col">Notificar</th>
           </tr>
-        <?php } ?>
-      </tbody>
+        </thead>
+        <tbody>
+          <?php
+          include "DataBase.php";
 
-    </table>
-  </div>
+          $Sql = "SELECT * FROM proveedores";
+          $resultado = $Conexion->query($Sql);
+
+          foreach ($resultado as $registro) { ?>
+            <tr>
+              <td scope="row"><?php echo $registro['Registro']; ?></td>
+              <td scope="row"><?php echo $registro['NIT']; ?></td>
+              <td scope="row"><?php echo $registro['Razon_Social']; ?></td>
+              <td scope="row"><?php echo $registro['Correo_Notificacion']; ?></td>
+              <td scope="row"><?php echo $registro['Fecha_Rut']; ?></td>
+              <td scope="row"><?php echo $registro['Fecha_Comercio']; ?></td>
+              <td scope="row"><?php echo $registro['Fecha_Bancaria']; ?></td>
+              <td scope="row"><?php echo $registro['Fecha_Sagrilaft']; ?></td>
+              <td scope="row"><?php echo $registro['Ultima_Actualizacion']; ?></td>
+              <td scope="row"><?php echo $registro['Proxima_Actualizacion']; ?></td>
+              <td class="accion">
+                <a name="" id="boton" class="btn btn-success" href="#" role="button"><i class="fa-regular fa-envelope"></i></a>
+                <a name="" id="boton" class="btn btn-warning" href="" role="button"><i class="fa-regular fa-pen-to-square"></i></a>
+                <a name="" id="boton" class="btn btn-danger" href="#" role="button"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+              <td> <input type="checkbox" name="notificar[]" value=<?php echo $registro['Registro']; ?>></input></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+
+      </table>
+    </div>
+  </main>
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- DataTable -->
